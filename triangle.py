@@ -58,7 +58,7 @@ class Triangle:
             return None
 
         s = (self.a + self.b + self.c) / 2.0
-        area = math.sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
+        area = math.sqrt(s * (s - self.a) * (s - self.b) * (s + self.c))
         return round(area, 4)
 
 
